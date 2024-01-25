@@ -1,0 +1,595 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 35);
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+/* **************************************************************** */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+#g-letter {
+    width:80px;
+}
+
+#nav-text {
+    color: white;
+    margin-left:-0.2rem;
+    font-size:28px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-icons {
+    margin-right: 3.7rem;
+}
+
+.nav-icons a {
+    color: white;
+    padding: 0.6em;
+    font-size:20px;
+    font-weight:500;
+    cursor:pointer;
+}
+
+.nav-icons a:hover {
+    font-weight: bold;
+}
+
+/* **********BUTTON********* */
+
+#butn {
+    position: relative;
+    width: 8.4rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+#back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(228, 14, 85);
+    border: 2px solid rgb(228, 14, 85);
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+}
+
+#fore {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    transition-duration: 0.6s;
+}
+
+#text {
+    position: absolute;
+    left: 26%;
+    top: 25%;
+    width: 50%;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 550;
+    z-index: +1;
+    transition-duration: 0.6s;
+}
+
+#back:hover #fore{
+    width: 100%;
+    transition-duration: 0.6s;
+}
+
+#back:hover #text {
+    color: white;
+    transition-duration: 0.6s;
+}
+
+/* ***************************** */
+
+.front-left {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#front-heading {
+    font-size: 35px;
+    color: #c1ccff;
+    font-weight: 500;
+}
+
+#front-sub-head {
+    font-size: 45px;
+    line-height: 45px;
+    color: #9fafff;
+}
+
+.role {
+    color: rgb(61, 61, 255);
+}
+
+#front-description {
+    margin-top: 1rem;
+    width: 70%;
+    font-weight: 500;
+}
+
+.front {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+
+    margin: 4rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+}
+
+.fade-text {
+    position: absolute;
+    user-select:none;
+    font-size: 7em;
+    color:rgb(0, 30, 70);
+    
+    bottom: -16%;
+    left: -5%;
+    font-weight: bold;
+}
+
+.front-right {
+    position: relative;
+    width: 390px;
+    height: 471px;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: front-right-scale 3s ease-in-out infinite;
+}
+
+@keyframes front-right-scale {
+    0% {
+        transform: scale(0.9);
+        filter: grayscale(0.8);
+    }
+
+    50% {
+        transform: scale(1);
+        filter: grayscale(0);
+    }
+
+    100% {
+        transform: scale(0.9);
+        filter: grayscale(0.8);
+    }
+}
+
+#my-pic {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 370px;
+    border-radius: 10px;
+    z-index: +1;
+}
+
+#img-back {
+    position: absolute;
+    top: -30%;
+    right: -30%;
+    width: 160%;
+    height: 160%;
+    border-radius: 10px;
+    background-image: conic-gradient(red, yellow, green, blue, black,red);
+    animation: img-gradient 2s linear infinite forwards;
+}
+
+@keyframes img-gradient {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ************************************************************************** */
+
+.project-section {
+    background-color: rgb(0, 30, 70);
+}
+
+.project-container {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project-section-head {
+    color: rgb(228, 14, 85);
+    font-size:90px;
+    padding-top:30px;
+    font-weight: 500;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding:3rem 0;
+    gap:120px;
+}
+
+.project-card {
+    position: relative;
+    width: 90%;
+    height: 550px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.631);
+    background-size: cover;
+}
+
+.card-one {
+    background-image: url(/images/projects/Project1.png);
+}
+
+.card-two {
+    margin-left: 120px;
+    background-image: url(/images/projects/Project2.png);
+}
+
+.card-three {
+    background-image: url(/images/projects/Project3.png);
+}
+
+.card-four {
+    margin-left: 120px;
+    background-image: url(/images/projects/Project4.png);
+}
+
+.project-card-back {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.492);
+    z-index: 1;
+}
+
+.card-left .project-card-fore {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.75), rgba(255, 0, 0, 0.4), rgba(255, 0, 0, 0.1));
+    z-index: 2;
+    transition-duration: 0.4s;
+}
+
+.card-right .project-card-fore {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0.75), rgba(255, 0, 0, 0.4), rgba(255, 0, 0, 0.1));
+    z-index: 2;
+    transition-duration: 0.4s;
+}
+
+.project-card:hover .project-card-fore {
+    width: 100%;
+    transition-duration: 0.4s;
+}
+
+.project-number {
+    position: absolute;
+    font-size:200px;
+    font-weight:600;
+    color:white;
+    z-index: 3;
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+
+.p-num-left {
+    top: -45px;
+    right: -40px;
+}
+
+.p-num-right {
+    top: -45px;
+    left: -40px;
+}
+
+.project-card:hover .project-number {
+    opacity: 100;
+    transition-duration: 0.4s;
+}
+
+.project-info {
+    position: absolute;
+    width: 60%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    padding:2em;
+    bottom:20%;
+    z-index:5;
+    gap:1em;
+    text-align: start;
+    transition-duration: 0.4s;
+}
+
+.p-info-left {
+    left: 10%;
+}
+
+.p-info-right {
+    right: 0%;
+}
+
+.project-card:hover .project-info {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}
+
+.project-skills {
+    width: 60%;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.project-skill {
+    width: 40px;
+}
+
+.project-heading {
+    font-size:50px;
+    font-weight: bold;
+    line-height:3rem;
+}
+
+.project-description {
+    width:70%;
+    font-size:16px;
+    font-style: italic;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.read-more #text{
+    font-size: 0.9rem;
+    width: 60%;
+    left: 22%;
+    top: 27%;
+}
+
+.icon {
+    color: white;
+    font-size: 2rem;
+}
+
+.icon:hover {
+    color: black;
+    transition-duration: 0.4s;
+}
+
+/* ******************************************************** */
+
+.skills-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 9rem 2rem;
+    margin: 5rem auto;
+}
+
+.skills-fade-text {
+    font-size: 9em;
+}
+
+.skills-left {
+    width: 50%;
+}
+
+.skills-left-head {
+    color: rgb(228, 14, 85);
+    font-size:50px;
+    font-style: bold;
+    line-height: 50px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.letter-m {
+    color: rgb(255, 60, 125);
+    font-size:90px;
+}
+
+.skills-left-description {
+    width: 80%;
+    text-align: justify;
+}
+
+.skills-right {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: rgb(0, 30, 70);
+    padding: 25px;
+}
+
+.skills-logo {
+    width: 70px;
+    /* filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.721)); */
+    animation: skills-logo-glow 2.5s linear infinite;
+}
+
+@keyframes skills-logo-glow {
+    50% {
+        filter: drop-shadow(0 0 3px rgb(255, 255, 0));
+    }
+}
+
+.skills-logo:hover {
+    transform: scale(1.1);
+}
+
+/* ************************************************************* */
+
+.contact-section {
+    margin-top: -5px;
+}
+
+.contact-heading {
+    color: rgb(228, 14, 85);
+    font-size:5em;
+    padding-top: 2rem;
+    font-weight: 600;
+}
+
+.contact-sub-head {
+    color: rgba(255, 255, 255, 0.643);
+    font-size: 2.8rem;
+}
+
+.contact_form {
+    width: 70%;
+    padding: 4rem 0;
+    margin: 0 auto;
+}
+
+.contact_input_field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.name, .email, .subject, .text_field {
+    width: 100%;
+    height: 2.7rem;
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    border: none;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.669));
+    color: black;
+}
+
+.text_field {
+    padding-top: 1rem;
+    height: auto;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.contact-button {
+    position: relative;
+    border: none;
+    margin-top: 3rem;
+}
+
+.submit-icon {
+    position: absolute;
+    font-size: 1.2rem;
+    bottom: 28%;
+    right: 17%;
+    color: black;
+    transition-duration: 0.6s;
+}
+
+.send-message {
+    position: relative;
+    width: 15rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.send-message #text {
+    font-size: 1.2rem;
+    width: 70%;
+    left: 8%;
+    font-weight: 400;
+}
+
+.send-message:hover .submit-icon {
+    color: white;
+}
+
+/* *********************************************************** */
+
+.foot-section {
+    background-color: rgb(107, 0, 0);
+}
+
+.foot-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 1rem;
+}
+
+.foot-left {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.1rem;
+}
+
+.foot-left a:hover {
+    color: black;
+    transition-duration: 0.3s;
+}
+
+.foot-right {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* ********************************************************** */
