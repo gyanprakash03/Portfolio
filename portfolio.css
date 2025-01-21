@@ -52,7 +52,7 @@ a {
 }
 
 .nav-icons {
-    margin-right: 3.7rem;
+    margin-right: 1.7rem;
 }
 
 .nav-icons a {
@@ -95,12 +95,13 @@ a {
 
 #text {
     position: absolute;
-    left: 26%;
+    left: 24%;
+    text-wrap-mode: nowrap;
     top: 25%;
     width: 50%;
     color: black;
     font-size: 1.1em;
-    font-weight: 550;
+    font-weight: 600;
     z-index: +1;
     transition-duration: 0.6s;
 }
@@ -113,6 +114,14 @@ a {
 #back:hover #text {
     color: white;
     transition-duration: 0.6s;
+}
+
+.resume-btn {
+    width: 10.8rem !important;
+}
+
+.resume-txt {
+    left: 22% !important;
 }
 
 /* ***************************** */
