@@ -125,6 +125,12 @@ a {
     gap: 2rem;
 }
 
+#front-hello {
+    margin-bottom: -1.7rem;
+    color: #9fafff;
+    font-size: 15px;
+}
+
 #front-heading {
     font-size: 35px;
     color: #c1ccff;
@@ -420,6 +426,15 @@ a {
     transition-duration: 0.4s;
 }
 
+.icon1 {
+    filter: invert(0) sepia(0) saturate(100%) hue-rotate(0deg);
+    transition-duration: 0.4s;
+}
+
+.icon1:hover {
+    filter: invert(1) sepia(1) saturate(500%) hue-rotate(0deg);
+}
+  
 /* ******************************************************** */
 
 .skills-section {
@@ -462,7 +477,7 @@ a {
     width: 50%;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2.6rem;
     background-color: rgb(0, 30, 70);
     padding: 25px;
 }
@@ -475,7 +490,7 @@ a {
 
 @keyframes skills-logo-glow {
     50% {
-        filter: drop-shadow(0 0 3px rgb(255, 255, 0));
+        filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.664));
     }
 }
 
