@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: rgb(211, 216, 232);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: #0d1224;
+}
+
+#sticky-card-1 {
+  --index: 1;
+}
+
+#sticky-card-2 {
+  --index: 2;
+}
+
+#sticky-card-3 {
+  --index: 3;
+}
+
+#sticky-card-4 {
+  --index: 4;
+}
+
+.sticky-card {
+  // padding-top: calc(var(--index) * 2.5rem);
+  top: calc(var(--index) * 4rem);
+}
+
+@keyframes spin-slow {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+.animate-spin-slow {
+  animation: spin-slow 4s linear infinite;
+}
+
+@keyframes text-fade {
+  0% {
+    color: #D545AB; /* gray-400 */
+  }
+  50% {
+    color: #ffffff; /* white */
+  }
+  100% {
+    color: #D545AB; /* gray-400 */
+  }
+}
+.animate-text-fade {
+  animation: text-fade 3s ease-in-out infinite;
+}
+
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 7px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ec4899 0%, #7c3aed 100%);
+  border-radius: 8px;
+  transition-duration: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #d6046d 0%, #6014e5 100%);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* For Firefox */
+// * {
+//   scrollbar-width: thin;
+//   scrollbar-color: #35f8ff #181c2f;
+// }
