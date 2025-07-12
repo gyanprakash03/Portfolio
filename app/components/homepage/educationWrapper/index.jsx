@@ -2,7 +2,7 @@
 
 import dynamic from 'next/dynamic'
 
-const Education = dynamic(() => import('./education'), {
+const Education = dynamic(() => import('../education'), {
   ssr: false,
 })
 
