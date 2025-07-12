@@ -7,7 +7,7 @@ import Experience from "./components/homepage/experience";
 import HeroSection from "./components/homepage/hero-section";
 import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
-import EducationWrapper from './components/homepage/EducationWrapper'
+import EducationWrapper from './components/homepage/educationWrapper'
 
 export default function Home() {
 
