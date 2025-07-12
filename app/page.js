@@ -7,12 +7,7 @@ import Experience from "./components/homepage/experience";
 import HeroSection from "./components/homepage/hero-section";
 import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
-
-import dynamic from 'next/dynamic';
-
-const Education = dynamic(() => import('./components/homepage/education'), {
-  ssr: false,
-});
+import EducationWrapper from './components/homepage/EducationWrapper'
 
 export default function Home() {
 
@@ -24,6 +19,7 @@ export default function Home() {
       <Skills />
       <Projects />
       {/* <Education /> */}
+      <EducationWrapper />
       {/* <Blog blogs={blogs} /> */}
       <ContactSection />
     </div>
